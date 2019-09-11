@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |`/~|  Left   | Right| LAlt | LGui|                                       |  RGui | RAlt | Down |  Up  | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | TO(1)| TO(2)|       | TO(2)| TO(1)|
+ *                                        | TG(1)| TG(2)|       | TG(2)| TG(1)|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 | Back |      | Home |       | PgUp |        |      |
  *                                 | Space| Tab  |------|       |------|  Enter |Space |
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTRL,       KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   KC_LPRN,
         KC_GRAVE,       KC_LEFT,    KC_RIGHT, KC_LALT,KC_LGUI,
-                                              TO(SYMB),  TO(MDIA),
+                                              TG(SYMB),  TG(MDIA),
                                                               KC_HOME,
                                                KC_BSPC,KC_TAB,KC_END,
         // right hand
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_H,   KC_J,     KC_K,    KC_L,    KC_SCLN,   KC_QUOT,
              KC_RPRN,     KC_N,   KC_M,     KC_COMM, KC_DOT,  KC_SLSH,   KC_RSFT,
                                   KC_RGUI,  KC_RALT, KC_DOWN, KC_UP,     KC_FN1,
-             TO(MDIA),    TO(SYMB),
+             TG(MDIA),    TG(SYMB),
              KC_PGUP,
              KC_PGDN,KC_ENTER,KC_SPACE
     ),
@@ -65,10 +65,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |---------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |         |   %  |   ^  |   [  |   ]  |   ~  |      |           |      |      |      |      |      |      |        |
  * `---------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- * | EEP_RST  |      |      |      |      |                                       |      |      |      |      |      |
+ * | RESET   |      |      |      |      |                                       |      |      |      |      |      |
  *   `-----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        |Animat|      |       |Toggle|Solid |
+ *                                        |      |      |       |      |      |
  *                                 ,------|------|------|       |------+------+------.
  *                                 |Bright|Bright|      |       |      |Hue-  |Hue+  |
  *                                 |ness- |ness+ |------|       |------|      |      |
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_EXLM,KC_AT,  KC_LCBR,KC_RCBR,KC_PIPE,KC_TRNS,
        KC_TRNS,KC_HASH,KC_DLR, KC_LPRN,KC_RPRN,KC_GRV,
        KC_TRNS,KC_PERC,KC_CIRC,KC_LBRC,KC_RBRC,KC_TILD,KC_TRNS,
-       EEP_RST,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+       RESET,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,
                                                KC_TRNS,
                                RGB_VAD,RGB_VAI,KC_TRNS,
@@ -133,7 +133,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 KC_DOWN, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_TRNS,
        KC_TRNS, KC_AMPR, KC_1,   KC_2,    KC_3,    KC_BSLS, KC_TRNS,
                          KC_TRNS,KC_DOT,  KC_0,    KC_EQL,  KC_TRNS,
-       RGB_TOG, RGB_SLD,
+       KC_TRNS, KC_TRNS,
        KC_TRNS,
        KC_TRNS, RGB_HUD, RGB_HUI
 ),
