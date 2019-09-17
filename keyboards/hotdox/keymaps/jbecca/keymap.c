@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |   Esc  |   1  |   2  |   3  |   4  |   5  | =/+  |           | =/+  |   6  |   7  |   8  |   9  |   0  |   -    |
+ * |   Esc  |   1  |   2  |   3  |   4  |   5  | =/+  |           |TO(base)|   6  |   7  |   8  |   9  |   0  |   -    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Tab    |   Q  |   W  |   E  |   R  |   T  |  [{  |           |  ]}  |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | TG(1)| TG(2)|       | TG(2)| TG(1)|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 | Back |      | Del  |       | PgUp |        |      |
- *                                 | Space| Tab  |------|       |------|  Enter |Space |
+ *                                 | Space| MO(1)|------|       |------|  Enter |Space |
  *                                 |      |      | Ins  |       | PgDn |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRAVE,       KC_LEFT,    KC_RIGHT, KC_LALT,KC_LGUI,
                                               TG(SYMB),  TG(MDIA),
                                                               KC_DEL,
-                                               KC_BSPC,KC_TAB,KC_INS,
+                                               KC_BSPC,MO(SYMB),KC_INS,
         // right hand
-             KC_EQUAL,    KC_6,   KC_7,     KC_8,    KC_9,    KC_0,      KC_MINS,
+             TO(BASE),    KC_6,   KC_7,     KC_8,    KC_9,    KC_0,      KC_MINS,
              KC_RBRACKET, KC_Y,   KC_U,     KC_I,    KC_O,    KC_P,      KC_BSLS,
                           KC_H,   KC_J,     KC_K,    KC_L,    KC_SCLN,   KC_QUOT,
              KC_RPRN,     KC_N,   KC_M,     KC_COMM, KC_DOT,  KC_SLSH,   KC_RSFT,
